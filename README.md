@@ -1,27 +1,30 @@
-Lab-Exercises
+### Lab-Exercises
 
-Name: Namitha.S
-Register Number:212221040110
-```
+### Name: Namitha.S
+### Register Number:212221040110
 
-#Caesar Cipher#
+# Caesar Cipher
 
 ```
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+
 int main() {
     char plain[10], cipher[10];
     int key, i, length;
+    
     printf("Enter the plain text: ");
     scanf("%s", plain);
     printf("Enter the key value: ");
     scanf("%d", &key);
+
     printf("\nPLAIN TEXT: %s\n", plain);
+
     length = strlen(plain);
+
     printf("\nENCRYPTED TEXT: ");
-    for (i = 0; i < length; i++) 
-    {
+    for (i = 0; i < length; i++) {
         cipher[i] = plain[i] + key;
         if (isupper(plain[i]) && (cipher[i] > 'Z'))
             cipher[i] -= 26;
@@ -29,6 +32,7 @@ int main() {
             cipher[i] -= 26;
         printf("%c", cipher[i]);
     }
+
     printf("\n\nAFTER DECRYPTION: ");
     for (i = 0; i < length; i++) {
         plain[i] = cipher[i] - key;
@@ -38,17 +42,16 @@ int main() {
             plain[i] += 26;
         printf("%c", plain[i]);
     }
+
     printf("\n");
+
     return 0;
 }
 ```
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/57e61a0e-d230-474b-9ec5-91a7274a3755)
 
-Output:
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/3edb3ac1-c439-498a-acbe-c0c7835f7438)
-
-```
-Hill Cipher
-```
+# Hill Cipher
 ```
 #include<stdio.h>
 #include<string.h>
@@ -96,12 +99,10 @@ int main() {
     return 0;
 }
 ```
-Output:
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/77d6b1c5-d057-49b1-80cb-b4e9254a3219)
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/0310f820-c1f8-4d11-afb6-acbba9b05034)
 
-```
-Vigenere Cipher
-```
+# Vigenere Cipher
 ```
 #include <stdio.h>
 #include <ctype.h>
@@ -176,12 +177,10 @@ void decipher() {
     printf("\n");
 }
 ```
-Output:
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/44c174c9-ff10-42bc-b3ce-5f580592b217)
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/cfa7361b-8626-4b1e-97ee-812ba164af5a)
 
-```
-Rail Fence
-```
+# Rail Fence
 ```
 #include <stdio.h>
 #include <string.h>
@@ -230,12 +229,10 @@ int main() {
     return 0;
 }
 ```
-Output:
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/22d9d3fe-b53f-4aac-9a7a-719a460304be)
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/bc14b4a4-b633-47bd-bd7e-341654d317a4)
 
-```
-RSA
-```
+# RSA
 ```
 #include<stdio.h>
 #include<stdlib.h>
@@ -363,12 +360,9 @@ void decrypt() {
         printf("%c", m[i]);
 }
 ```
-Output:
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/aa601540-b27e-447c-aa18-4fe2c4f1245a)
-
-```
-MD5
-```
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/5bb90ef5-2f19-4139-aab9-38afee3dce66)
+# MD5
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -504,12 +498,9 @@ int main() {
     return 0;
 }
 ```
-Output
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/ee159de3-fb48-44a2-9efc-d0ea1bf5a107)
-
-```
-SHA 1
-```
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/ebec1acd-39c7-491a-8f04-5a0fbf83794c)
+# SHA 1
 ```
 import java.security.*;
 
@@ -553,5 +544,5 @@ public class SHA1 {
     }
 }
 ```
-Output
-![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/3b2eaaf6-5c74-4e6f-abd8-32167dc2d61b)
+# Output
+![image](https://github.com/NamithaS2710/lab-exercises/assets/133190822/59203784-98a5-475f-9d6c-63050f591706)
